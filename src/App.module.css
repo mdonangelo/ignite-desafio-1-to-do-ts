@@ -1,0 +1,88 @@
+.mainHeader {
+    width: 100%;
+    display: block;
+    background: var(--gray-700);
+    text-align: center;
+
+    padding: 4.5rem 1rem 5rem 1rem;
+}
+
+.container {
+    max-width: 736px;
+    padding:0 1rem;
+    margin:0 auto;
+    margin-top: -1.6875rem;
+}
+
+
+
+
+
+
+
+
+
+.todoContainer {
+    width: 100%;
+    margin: 4rem 0 1rem 0;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.titleContainer > strong {
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+
+    font-size: 0.875rem;
+}
+
+.titleContainer strong > span {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding:0.125rem 0.5rem;
+    border-radius: 100px;
+    background: var(--gray-400);
+    color: var(--white);
+    line-height: normal;
+}
+
+.titleContainer strong {
+    color: var(--purple-300);
+}
+
+.titleContainer strong:first-child {
+    color: var(--blue-300);
+}
+
+.list {
+    width: 100%;
+    display: block;
+}
+
+.emptyList {
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+    text-align: center;
+    padding-top: 4rem;
+    color: var(--gray-300);
+}
+
+.emptyList svg {
+    color: var(--gray-400);
+    margin-bottom: 1rem;
+}
+
+.todoItems {
+    width: 100%;
+    display: block;
+    margin-top: 4rem;
+}
+
+.todoItems li + li {
+    margin-top: 0.75rem;
+}

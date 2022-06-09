@@ -1,0 +1,50 @@
+.todoForm {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.todoForm > input { 
+    flex: 1;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    color: var(--white);
+    border-radius: 8px;
+    padding:1rem;
+    outline: none;
+}
+
+.todoForm > input::placeholder {
+    color: var(--gray-300);
+}
+
+input:focus {
+    box-shadow: none;
+    border: 1px solid var(--purple-500);
+}
+
+.todoForm > button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 8px;
+
+    background: var(--blue-500);
+    color: var(--white);
+
+    padding:1.125rem 1rem;
+    cursor: pointer;
+
+    transition: background 0.1s;
+}
+
+.todoForm > button:not(:disabled):hover {
+    background: var(--blue-300);
+}
+
+.todoForm > button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
